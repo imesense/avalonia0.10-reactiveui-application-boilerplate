@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project>
+    <!-- Set output paths -->
+    <PropertyGroup>
+        <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+        <BaseOutputPath>$(MSBuildThisFileDirectory)bin\</BaseOutputPath>
+    </PropertyGroup>
+
+    <!-- Strip stacktrace paths -->
+    <PropertyGroup>
+        <DeterministicSourcePaths>true</DeterministicSourcePaths>
+    </PropertyGroup>
+    <ItemGroup>
+        <SourceRoot Include="$(MSBuildThisFileDirectory)" />
+    </ItemGroup>
+</Project>
