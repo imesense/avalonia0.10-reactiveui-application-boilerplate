@@ -1,0 +1,15 @@
+<Application
+    x:Class="ImeSense.Boilerplates.Avalonia.App"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dt="using:ImeSense.Boilerplates.Avalonia.DataTemplates"
+    xmlns:td="using:Avalonia.Themes.Default">
+    <Application.DataTemplates>
+        <dt:ViewDataTemplate />
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <td:DefaultTheme />
+        <StyleInclude Source="avares://Avalonia.Themes.Default/Accents/BaseLight.xaml"/>
+    </Application.Styles>
+</Application>

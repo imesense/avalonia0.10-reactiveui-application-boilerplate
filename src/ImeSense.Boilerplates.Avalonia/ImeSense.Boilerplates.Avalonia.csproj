@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <OutputType>Library</OutputType>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>disable</ImplicitUsings>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Assets\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="0.10.22" />
+        <PackageReference Include="Avalonia.Diagnostics" Version="0.10.22">
+            <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+            <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.22" />
+        <PackageReference Include="XamlNameReferenceGenerator" Version="1.6.1" />
+    </ItemGroup>
+</Project>
